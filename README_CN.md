@@ -1,7 +1,9 @@
 # ContextClaude
 
 <div align="center">
-
+  <img src="https://files.mdnice.com/user/43439/11c4b3f7-9a89-4753-8e80-ebc474f845aa.jpg" alt="ContextClaude Logo" width="400"/>
+  <br/><br/>
+  
 ![GitHub stars](https://img.shields.io/github/stars/yzfly/ContextClaude?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/yzfly/ContextClaude?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/yzfly/ContextClaude)
