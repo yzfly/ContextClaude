@@ -199,7 +199,7 @@ ContextX/
 │   │
 │   └── settings.local.json      ← Local Settings
 │
-├── .context/                    ← User Configuration Directory
+├── .contextx/                    ← User Configuration Directory
 │   ├── data/                    ← Raw Data & Documents
 │   │   ├── api_specs.md         ← API Documentation
 │   │   ├── xxx.md               ← Other Documents
@@ -230,7 +230,7 @@ ContextX/
 
 ```
 项目根目录/
-├── .context/                   ← 上下文管理目录
+├── .contextx/                   ← 上下文管理目录
 │   ├── TASK_PROMPT.md          ← 任务需求描述提示词文档
 │   ├── data/                   ← 用户提供的文档资料
 │   │   ├── api_docs.md         ← API 文档
@@ -274,7 +274,7 @@ Step 1: Get Framework
                                ▼
 Step 2: Context Preparation
 ┌─────────────────────────────────────────────────────────┐
-│ User prepares .context/ directory with:                 │
+│ User prepares .contextx/ directory with:                 │
 │ • Raw documents in data/                                │
 │ • Web links in data/web_docs.md                         │
 │ • Example code in examples/                             │
@@ -314,7 +314,7 @@ Step 4: Final Output
                                        ▼
                         ┌───────────────────────────────┐
                         │    User Context Setup         │
-                        │     (.context directory)      │
+                        │     (.contextx directory)      │
                         └──────────────┬────────────────┘
                                        │
                 ┌──────────────────────┼──────────────────────┐
@@ -324,7 +324,7 @@ Step 4: Final Output
         │ Raw Data &    │      │ Example Code  │      │ Task Prompt   │
         │ Documents     │      │               │      │               │
         │               │      │               │      │               │
-        │.context/data/ │      │.context/      │      │.context/      │
+        │.contextx/data/ │      │.contextx/      │      │.contextx/      │
         │               │      │examples/      │      │TASK_PROMPT.md │
         └───────┬───────┘      └───────┬───────┘      └───────┬───────┘
                 │                      │                      │
@@ -354,7 +354,7 @@ Step 4: Final Output
         │ Knowledge     │      │ Requirements  │      │ Generation    │
         │ Base          │      │ Document      │      │ (Based on     │
         │(Optional)     │      │(Optional)     │      │ available     │
-        │.context/      │      │.context/      │      │ context)      │
+        │.contextx/      │      │.contextx/      │      │ context)      │
         │knowledge/     │      │PRC.md         │      └───────┬───────┘
         └───────┬───────┘      └───────┬───────┘              │
                 │                      │                      │

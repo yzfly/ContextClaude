@@ -52,8 +52,8 @@ cd ContextX
 
 **第 2 步：准备项目上下文**
 ```bash
-# 在 .context 目录中准备你的项目材料
-.context/
+# 在 .contextx 目录中准备你的项目材料
+.contextx/
 ├── TASK_PROMPT.md          # 项目需求描述
 ├── data/                   # 相关文档资料
 └── examples/               # 参考代码（可选）
@@ -71,7 +71,7 @@ claude "/create 你的项目需求描述"
 
 ```bash
 # 1. 准备需求描述
-echo "创建一个 React Todo 应用，支持添加、删除、标记完成功能" > .context/TASK_PROMPT.md
+echo "创建一个 React Todo 应用，支持添加、删除、标记完成功能" > .contextx/TASK_PROMPT.md
 
 # 2. 运行生成命令
 claude "/create 基于 React 的 Todo 应用"
@@ -110,7 +110,7 @@ ls -la  # 查看生成的项目文件
 
 #### 1. 上下文目录结构
 ```
-.context/
+.contextx/
 ├── TASK_PROMPT.md          # 【必需】项目需求描述
 ├── data/                   # 【可选】相关文档资料
 │   ├── api_docs.md         # API 文档
@@ -264,7 +264,7 @@ claude mcp list
 - 为后续智能体提供准确的技术背景
 
 **输入：** 原始文档、网页链接、技术资料
-**输出：** `.context/knowledge/` 目录下的结构化文档
+**输出：** `.contextx/knowledge/` 目录下的结构化文档
 
 #### Designer Agent  
 **职责：** 需求分析与架构设计
@@ -274,7 +274,7 @@ claude mcp list
 - 生成详细的项目需求文档 (PRC.md)
 
 **输入：** 任务需求、知识库、技术约束
-**输出：** `.context/PRC.md` 项目需求文档
+**输出：** `.contextx/PRC.md` 项目需求文档
 
 #### Builder Agent
 **职责：** 代码实现与项目交付
@@ -373,7 +373,7 @@ claude mcp list
 
 ```bash
 # 1. 准备需求
-cat > .context/TASK_PROMPT.md << EOF
+cat > .contextx/TASK_PROMPT.md << EOF
 # 博客管理系统
 
 ## 项目概述
@@ -401,8 +401,8 @@ claude "/create 博客管理系统开发"
 
 ```bash
 # 1. 准备 API 文档
-mkdir -p .context/data
-cat > .context/data/api_docs.md << EOF
+mkdir -p .contextx/data
+cat > .contextx/data/api_docs.md << EOF
 # 第三方 API 文档
 
 ## 用户 API
@@ -416,7 +416,7 @@ Bearer Token 认证
 EOF
 
 # 2. 准备需求
-cat > .context/TASK_PROMPT.md << EOF
+cat > .contextx/TASK_PROMPT.md << EOF
 # 用户管理客户端
 
 基于提供的 API 文档，创建一个用户管理的前端应用。
@@ -438,7 +438,7 @@ A:
 
 ### Q: 生成的项目不符合预期怎么办？
 A: 
-- 检查 `.context/TASK_PROMPT.md` 是否描述清晰
+- 检查 `.contextx/TASK_PROMPT.md` 是否描述清晰
 - 补充必要的技术文档到 `data/` 目录
 - 可以通过追加需求进行迭代优化
 - 查看生成的 `PRC.md` 了解系统理解是否正确

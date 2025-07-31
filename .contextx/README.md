@@ -4,7 +4,7 @@ The project context directory is designed to store project-related contextual in
 
 ## Project Context Directory Structure
 ```
-.context/
+.contextx/
 ├── data/
 ├── examples/
 ├── knowledge/

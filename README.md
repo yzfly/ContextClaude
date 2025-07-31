@@ -52,8 +52,8 @@ cd ContextX
 
 **Step 2: Prepare Project Context**
 ```bash
-# Prepare your project materials in the .context directory
-.context/
+# Prepare your project materials in the .contextx directory
+.contextx/
 ├── TASK_PROMPT.md          # Project requirements description
 ├── data/                   # Related documentation
 └── examples/               # Reference code (optional)
@@ -71,7 +71,7 @@ Create a simple Todo application:
 
 ```bash
 # 1. Prepare requirements description
-echo "Create a React Todo app with add, delete, and mark complete functionality" > .context/TASK_PROMPT.md
+echo "Create a React Todo app with add, delete, and mark complete functionality" > .contextx/TASK_PROMPT.md
 
 # 2. Run generation command
 claude "/create React-based Todo application"
@@ -110,7 +110,7 @@ Complex Tasks →  Learner → Designer → Builder (Learn-Design-Build)
 
 #### 1. Context Directory Structure
 ```
-.context/
+.contextx/
 ├── TASK_PROMPT.md          # [Required] Project requirements description
 ├── data/                   # [Optional] Related documentation
 │   ├── api_docs.md         # API documentation
@@ -265,7 +265,7 @@ Add web links to fetch in `data/web_docs.md`:
 - Provide accurate technical background for subsequent agents
 
 **Input:** Raw documents, web links, technical materials
-**Output:** Structured documents in `.context/knowledge/` directory
+**Output:** Structured documents in `.contextx/knowledge/` directory
 
 #### Designer Agent  
 **Responsibility:** Requirements analysis and architecture design
@@ -275,7 +275,7 @@ Add web links to fetch in `data/web_docs.md`:
 - Generate detailed project requirements document (PRC.md)
 
 **Input:** Task requirements, knowledge base, technical constraints
-**Output:** `.context/PRC.md` project requirements document
+**Output:** `.contextx/PRC.md` project requirements document
 
 #### Builder Agent
 **Responsibility:** Code implementation and project delivery
@@ -383,7 +383,7 @@ Edit `.claude/settings.local.json` for personalized configuration:
 
 ```bash
 # 1. Prepare requirements
-cat > .context/TASK_PROMPT.md << EOF
+cat > .contextx/TASK_PROMPT.md << EOF
 # Blog Management System
 
 ## Project Overview
@@ -411,8 +411,8 @@ claude "/create Blog management system development"
 
 ```bash
 # 1. Prepare API documentation
-mkdir -p .context/data
-cat > .context/data/api_docs.md << EOF
+mkdir -p .contextx/data
+cat > .contextx/data/api_docs.md << EOF
 # Third-party API Documentation
 
 ## User API
@@ -426,7 +426,7 @@ Bearer Token authentication
 EOF
 
 # 2. Prepare requirements
-cat > .context/TASK_PROMPT.md << EOF
+cat > .contextx/TASK_PROMPT.md << EOF
 # User Management Client
 
 Based on the provided API documentation, create a user management frontend application.
@@ -448,7 +448,7 @@ A:
 
 ### Q: What if the generated project doesn't meet expectations?
 A: 
-- Check if `.context/TASK_PROMPT.md` is clearly described
+- Check if `.contextx/TASK_PROMPT.md` is clearly described
 - Add necessary technical documentation to the `data/` directory
 - You can iteratively optimize by appending requirements
 - Review the generated `PRC.md` to see if the system understands correctly

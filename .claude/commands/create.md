@@ -111,8 +111,8 @@ Analyze the requirements to determine workflow path:
 ## Complexity Decision Logic
 ```
 Check context directory:
-- If .context/data/ has extensive documentation → Complex
-- If .context/examples/ has reference implementations → Complex
+- If .contextx/data/ has extensive documentation → Complex
+- If .contextx/examples/ has reference implementations → Complex
 - If external APIs/services mentioned + docs provided → Complex
 
 Check requirements scope:
@@ -134,7 +134,7 @@ Ensure proper directory structure exists:
 
 ```
 ./
-├── .context/
+├── .contextx/
 │   ├── TASK_PROMPT.md       # Main requirements (create if doesn't exist)
 │   ├── data/                # User-provided documentation
 │   │   ├── web_docs.md     # API documentation summary
@@ -150,7 +150,7 @@ Ensure proper directory structure exists:
 ```
 
 ### Directory Creation
-1. Create `.context/` if it doesn't exist
+1. Create `.contextx/` if it doesn't exist
 2. Create subdirectories: `data/`, `examples/`, `knowledge/`
 3. Check if user has provided materials in `data/` and `examples/`
 4. Report on available context materials
@@ -172,7 +172,7 @@ Execute: /user:build "$ARGUMENTS"
 ### Medium Task Workflow
 ```bash
 1. Execute: /user:design "$ARGUMENTS"
-   → Generates: .context/PRC.md (Project Requirements & Architecture)
+   → Generates: .contextx/PRC.md (Project Requirements & Architecture)
    
 2. Execute: /user:build "$ARGUMENTS"  
    → Uses: TASK_PROMPT.md + PRC.md for implementation
@@ -183,12 +183,12 @@ Execute: /user:build "$ARGUMENTS"
 ### Complex Task Workflow
 ```bash
 1. Execute: /user:learn "$ARGUMENTS"
-   → Processes: .context/data/ and .context/examples/
-   → Generates: .context/knowledge/ (organized learning materials)
+   → Processes: .contextx/data/ and .contextx/examples/
+   → Generates: .contextx/knowledge/ (organized learning materials)
    
 2. Execute: /user:design "$ARGUMENTS"
    → Uses: TASK_PROMPT.md + knowledge/ 
-   → Generates: .context/PRC.md
+   → Generates: .contextx/PRC.md
    
 3. Execute: /user:build "$ARGUMENTS"
    → Uses: All context materials for implementation
@@ -209,26 +209,26 @@ For each step, clearly communicate:
 ## Context Material Integration
 
 ### Input Materials Processing
-**User Documentation** (`.context/data/`):
+**User Documentation** (`.contextx/data/`):
 - API specifications and documentation
 - Business requirements documents
 - Technical standards and guidelines
 - Integration specifications
 
-**Reference Code** (`.context/examples/`):
+**Reference Code** (`.contextx/examples/`):
 - Template implementations
 - Reference architectures  
 - Code samples and patterns
 - Previous similar projects
 
 ### Generated Outputs
-**Knowledge Base** (`.context/knowledge/`) - Created by `learner agent`:
+**Knowledge Base** (`.contextx/knowledge/`) - Created by `learner agent`:
 - Processed API documentation
 - Extracted key patterns and practices
 - Integration guidelines and examples
 - Technical decision rationales
 
-**Project Requirements** (`.context/PRC.md`) - Created by `designer agent`:
+**Project Requirements** (`.contextx/PRC.md`) - Created by `designer agent`:
 - Detailed requirements analysis
 - Architecture and design decisions
 - Implementation plan and milestones
@@ -238,9 +238,9 @@ For each step, clearly communicate:
 ```
 User Input → Enhanced Requirements (TASK_PROMPT.md)
     ↓
-External Docs → Processed Knowledge (.context/knowledge/)
+External Docs → Processed Knowledge (.contextx/knowledge/)
     ↓  
-Analysis → Project Requirements (.context/PRC.md)
+Analysis → Project Requirements (.contextx/PRC.md)
     ↓
 Implementation → Complete Project Code
 ```
@@ -263,8 +263,8 @@ After complexity analysis, document the decision:
 
 **Context Available**:
 - TASK_PROMPT.md: [Available/Created]
-- Documentation (.context/data/): [X files found]
-- Examples (.context/examples/): [X files found]
+- Documentation (.contextx/data/): [X files found]
+- Examples (.contextx/examples/): [X files found]
 
 **Workflow Path**: [Simple/Medium/Complex workflow description]
 
@@ -280,7 +280,7 @@ Include this in the response to keep user informed of the process.
 
 ### Missing Context
 - If TASK_PROMPT.md missing and no arguments: Request user input
-- If complexity suggests need for docs but .context/data/ empty: Warn user
+- If complexity suggests need for docs but .contextx/data/ empty: Warn user
 - If external APIs mentioned but no documentation: Suggest documentation needed
 
 ### Workflow Failures
@@ -290,7 +290,7 @@ Include this in the response to keep user informed of the process.
 
 ### Directory Issues
 - Ensure permissions for directory creation
-- Handle cases where .context/ cannot be created
+- Handle cases where .contextx/ cannot be created
 - Provide alternative approaches if file system access limited
 </error_handling>
 
@@ -310,8 +310,8 @@ Include this in the response to keep user informed of the process.
 
 ## Context Materials Found
 - TASK_PROMPT.md: ✅/❌
-- Documentation files: [X files in .context/data/]
-- Example code: [X files in .context/examples/]
+- Documentation files: [X files in .contextx/data/]
+- Example code: [X files in .contextx/examples/]
 
 ## Workflow Execution Plan
 **Path**: [Workflow description]
@@ -348,7 +348,7 @@ Then immediately execute the determined workflow commands.
 ### Scenario 3: Complex with Documentation
 ```bash
 /user:create "Build WeChat mini-program mall system"
-# (with API docs in .context/data/ and examples in .context/examples/)
+# (with API docs in .contextx/data/ and examples in .contextx/examples/)
 ```
 **Result**:
 - Creates enhanced TASK_PROMPT.md
