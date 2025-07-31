@@ -1,13 +1,13 @@
-# ContextClaude
+# ContextX
 
 <div align="center">
-  <img src="https://files.mdnice.com/user/43439/11c4b3f7-9a89-4753-8e80-ebc474f845aa.jpg" alt="ContextClaude Logo" width="400"/>
+  <img src="https://files.mdnice.com/user/43439/1668dfff-b9b9-4b58-a228-0009bcb8e47d.jpg" alt="ContextX Logo" width="400"/>
   <br/><br/>
   
-![GitHub stars](https://img.shields.io/github/stars/yzfly/ContextClaude?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yzfly/ContextClaude?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yzfly/ContextClaude)
-![GitHub license](https://img.shields.io/github/license/yzfly/ContextClaude)
+![GitHub stars](https://img.shields.io/github/stars/yzfly/ContextX?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yzfly/ContextX?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yzfly/ContextX)
+![GitHub license](https://img.shields.io/github/license/yzfly/ContextX)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
 
 **从文档到代码，让 AI 理解你的完整意图**
@@ -23,7 +23,7 @@
 ## 📖 项目概览
 
 ### 这是什么？
-ContextClaude 是一个以 Claude Code 为核心引擎的上下文工程框架，让你通过文档和需求描述就能自动生成完整的代码项目。
+ContextX 是一个以 Claude Code 为核心引擎的上下文工程框架，让你通过文档和需求描述就能自动生成完整的代码项目。
 
 ### 解决什么问题？
 - **需求传达困难**：AI 难以理解复杂项目的完整上下文
@@ -46,8 +46,8 @@ ContextClaude 是一个以 Claude Code 为核心引擎的上下文工程框架�
 
 **第 1 步：获取框架**
 ```bash
-git clone https://github.com/yzfly/ContextClaude.git
-cd ContextClaude
+git clone https://github.com/yzfly/ContextX.git
+cd ContextX
 ```
 
 **第 2 步：准备项目上下文**
@@ -465,8 +465,8 @@ A:
 
 ```bash
 # 1. 克隆你的 Fork
-git clone https://github.com/yzfly/ContextClaude.git
-cd ContextClaude
+git clone https://github.com/yzfly/ContextX.git
+cd ContextX
 
 # 2. 创建功能分支
 git checkout -b feature/your-feature-name
@@ -510,9 +510,9 @@ git push origin feature/your-feature-name
 ## 🔗 相关链接
 
 - **官方文档**: [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- **问题反馈**: [GitHub Issues](https://github.com/yzfly/ContextClaude/issues)
-- **功能请求**: [Feature Request](https://github.com/yzfly/ContextClaude/issues/new?template=feature_request.md)
-- **项目讨论**: [GitHub Discussions](https://github.com/yzfly/ContextClaude/discussions)
+- **问题反馈**: [GitHub Issues](https://github.com/yzfly/ContextX/issues)
+- **功能请求**: [Feature Request](https://github.com/yzfly/ContextX/issues/new?template=feature_request.md)
+- **项目讨论**: [GitHub Discussions](https://github.com/yzfly/ContextX/discussions)
 
 ## 💬 社区支持
 
@@ -526,7 +526,7 @@ git push origin feature/your-feature-name
 
 **如果这个项目对你有帮助，请给它一个 ⭐️**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yzfly/ContextClaude&type=Date)](https://star-history.com/#yzfly/ContextClaude&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=yzfly/ContextX&type=Date)](https://star-history.com/#yzfly/ContextX&Date)
 
 Made with ❤️ by [yzfly](https://github.com/yzfly)
 

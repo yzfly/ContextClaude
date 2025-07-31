@@ -1,13 +1,13 @@
-# ContextClaude
+# ContextX
 
 <div align="center">
-  <img src="https://files.mdnice.com/user/43439/11c4b3f7-9a89-4753-8e80-ebc474f845aa.jpg" alt="ContextClaude Logo" width="400"/>
+  <img src="https://files.mdnice.com/user/43439/1668dfff-b9b9-4b58-a228-0009bcb8e47d.jpg" alt="ContextX Logo" width="400"/>
   <br/><br/>
   
-![GitHub stars](https://img.shields.io/github/stars/yzfly/ContextClaude?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yzfly/ContextClaude?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yzfly/ContextClaude)
-![GitHub license](https://img.shields.io/github/license/yzfly/ContextClaude)
+![GitHub stars](https://img.shields.io/github/stars/yzfly/ContextX?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yzfly/ContextX?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yzfly/ContextX)
+![GitHub license](https://img.shields.io/github/license/yzfly/ContextX)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
 
 **From Documents to Code - Let AI Understand Your Complete Intent**
@@ -23,7 +23,7 @@ English | [简体中文](./README_CN.md)
 ## 📖 Project Overview
 
 ### What is this?
-ContextClaude is a context engineering framework powered by Claude Code that automatically generates complete code projects from your documents and requirement descriptions.
+ContextX is a context engineering framework powered by Claude Code that automatically generates complete code projects from your documents and requirement descriptions.
 
 ### What problems does it solve?
 - **Requirement Communication Difficulties**: AI struggles to understand complete context of complex projects
@@ -46,8 +46,8 @@ ContextClaude is a context engineering framework powered by Claude Code that aut
 
 **Step 1: Get the Framework**
 ```bash
-git clone https://github.com/yzfly/ContextClaude.git
-cd ContextClaude
+git clone https://github.com/yzfly/ContextX.git
+cd ContextX
 ```
 
 **Step 2: Prepare Project Context**
@@ -475,8 +475,8 @@ We welcome all forms of contributions!
 
 ```bash
 # 1. Clone your fork
-git clone https://github.com/your-username/ContextClaude.git
-cd ContextClaude
+git clone https://github.com/your-username/ContextX.git
+cd ContextX
 
 # 2. Create feature branch
 git checkout -b feature/your-feature-name
@@ -520,9 +520,9 @@ Thanks to all developers and users who contributed to the project!
 ## 🔗 Related Links
 
 - **Official Documentation**: [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- **Issue Reports**: [GitHub Issues](https://github.com/yzfly/ContextClaude/issues)
-- **Feature Requests**: [Feature Request](https://github.com/yzfly/ContextClaude/issues/new?template=feature_request.md)
-- **Project Discussions**: [GitHub Discussions](https://github.com/yzfly/ContextClaude/discussions)
+- **Issue Reports**: [GitHub Issues](https://github.com/yzfly/ContextX/issues)
+- **Feature Requests**: [Feature Request](https://github.com/yzfly/ContextX/issues/new?template=feature_request.md)
+- **Project Discussions**: [GitHub Discussions](https://github.com/yzfly/ContextX/discussions)
 
 ## 💬 Community Support
 
@@ -536,7 +536,7 @@ Thanks to all developers and users who contributed to the project!
 
 **If this project helps you, please give it a ⭐️**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yzfly/ContextClaude&type=Date)](https://star-history.com/#yzfly/ContextClaude&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=yzfly/ContextX&type=Date)](https://star-history.com/#yzfly/ContextX&Date)
 
 Made with ❤️ by [yzfly](https://github.com/yzfly)
 
