@@ -536,7 +536,7 @@ Thanks to all developers and users who contributed to the project!
 
 **If this project helps you, please give it a ⭐️**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yzfly/ContextX&type=Date)](https://star-history.com/#yzfly/ContextX&Date)
+[![Star History Chart](https://www.star-history.com/#yzfly/ContextX&Date)](https://www.star-history.com/#yzfly/ContextX&Date)
 
 Made with ❤️ by [yzfly](https://github.com/yzfly)
 
